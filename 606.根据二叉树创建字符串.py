@@ -1,4 +1,14 @@
 '''
+Author: wangding wangding19@mails.ucas.ac.cn
+Date: 2023-02-11 15:43:55
+LastEditors: wangding wangding19@mails.ucas.ac.cn
+LastEditTime: 2023-02-11 16:05:45
+FilePath: \Leetcode_Solver\606.根据二叉树创建字符串.py
+Description: 
+
+Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+'''
+'''
 Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
 Date: 2023-02-11 15:43:55
 LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git

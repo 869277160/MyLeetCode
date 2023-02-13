@@ -15,22 +15,18 @@
 class Solution:
     def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
         
-        # 结束条件
+        # 结束条件，对比成功或者达到叶子节点
         if original == None:
             return None
         if original == target:
             return cloned
         
-        # 循环bian'li
+        # 循环对比左右子树
         if self.getTargetCopy(original.left, cloned.left, target) != None:
             return self.getTargetCopy(original.left, cloned.left, target)
         if self.getTargetCopy(original.right, cloned.right, target) != None:
             return self.getTargetCopy(original.right, cloned.right, target)
-        # if self.getTargetCopy(original.left, cloned.left, target) == None and self.getTargetCopy(original.right, cloned.right, target) == None:
-        #     return None
-        
-        
-        
+
         
         
 # @lc code=end
