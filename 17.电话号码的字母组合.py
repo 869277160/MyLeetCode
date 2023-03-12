@@ -1,8 +1,8 @@
 '''
 Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
 Date: 2023-02-09 09:26:49
-LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
-LastEditTime: 2023-02-09 09:41:55
+LastEditors: wangding wangding19@mails.ucas.ac.cn
+LastEditTime: 2023-02-13 17:02:32
 FilePath: \Leetcode_Solver\17.电话号码的字母组合.py
 Description: 
 
@@ -48,10 +48,6 @@ class Solution:
                 return [i+j+k for i in strlists[0] for j in strlists[1] for k in strlists[2]]
         if len(strlists) == 4 :
                 return [i+j+k+l for i in strlists[0] for j in strlists[1] for k in strlists[2] for l in strlists[3]]
-        
-        
-        
-        
-        
+
 # @lc code=end
 

@@ -3,6 +3,15 @@
 		{
 			"name": "Leetcode_Solver",
 			"path": "."
+		},
+		{
+			"name": "Leetcode_Solver",
+			"path": "../../Leetcode_Solver"
 		}
-	]
+	],
+	"settings": {
+		"Codegeex.DisabledFor": {
+			"": true
+		}
+	}
 }

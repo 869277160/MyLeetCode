@@ -33,6 +33,16 @@ class Solution:
         
         
         
+    # def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    #     """
+    #     :type head: ListNode
+    #     :rtype: ListNode
+    #     """
+    #     p, rev = head, None
+    #     while p:
+    #         rev, rev.next, p = p, rev, p.next
+    #     return rev
+        
         
 # @lc code=end
 

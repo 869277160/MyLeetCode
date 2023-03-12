@@ -1,13 +1,3 @@
-'''
-Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
-Date: 2023-02-09 12:26:26
-LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
-LastEditTime: 2023-02-09 12:27:39
-FilePath: \Leetcode_Solver\114.二叉树展开为链表.py
-Description: 
-
-Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
-'''
 #
 # @lc app=leetcode.cn id=114 lang=python3
 #
@@ -27,7 +17,30 @@ class Solution:
         Do not return anything, modify root in-place instead.
         """
         
+        # if root == None :
+        #     return 
+        # else :
+        #     if root.left == None and root.right == None:
+        #         retyu
+        #     else:
+                
+            
         
+        #     # 借鉴前序遍历思路
+        #     root_node = root 
+        #     left_node = root.left 
+        #     right_node = root.right 
+
+        #     flatten_left = self.flatten(left_node)
+        #     flatten_right = self.flatten(right_node)
+            
+            
+        #     root_node.left = None 
+        #     root.right = flatten_left
+            
+        #     # flatten_left.right = flatten_right
+        
+
         
         
         
