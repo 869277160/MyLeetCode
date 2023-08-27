@@ -2,7 +2,7 @@
 Author: wangding wangding19@mails.ucas.ac.cn
 Date: 2023-02-11 16:06:04
 LastEditors: wangding wangding19@mails.ucas.ac.cn
-LastEditTime: 2023-02-11 17:20:07
+LastEditTime: 2023-02-11 17:21:32
 FilePath: \Leetcode_Solver\22.括号生成.py
 Description: 
 
