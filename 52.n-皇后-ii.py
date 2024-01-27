@@ -30,8 +30,8 @@ class Solution:
     def backtrackForTotalNQueen(self, board, row):
         total_row = len(board)
         if row == total_row:
-            print(board)
-            print()
+            # print(board)
+            # print()
             self.res += 1
             return 
         

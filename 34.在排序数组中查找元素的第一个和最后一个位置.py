@@ -1,3 +1,13 @@
+'''
+Author: DingWang wangding19@mails.ucas.ac.cn
+Date: 2023-08-21 17:30:26
+LastEditors: DingWang wangding19@mails.ucas.ac.cn
+LastEditTime: 2024-01-23 13:18:13
+FilePath: \Leetcode_Solver\34.在排序数组中查找元素的第一个和最后一个位置.py
+Description: 
+
+Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
+'''
 #
 # @lc app=leetcode.cn id=34 lang=python3
 #
@@ -14,46 +24,43 @@ class Solution:
         # else:
             # return [nums.index(target), len(nums) - nums[::-1].index(target) - 1]
         else:
-            return [self.find_left_bound(nums,target),self.find_right_bound(nums,target)]
-    
-    
+            return [self.find_left_bound(nums, target), self.find_right_bound(nums, target)]
+
     # def find_elem(self,num,target):
-        
-        
-    def find_left_bound(self,nums,target):
-        left, right = 0,len(nums)-1
-        
-        while(left <= right):
-            mid = left + (right - left) //2
+
+    def find_left_bound(self, nums, target):
+        left, right = 0, len(nums)-1
+
+        while (left <= right):
+            mid = left + (right - left) // 2
             if nums[mid] < target:
                 left = mid + 1
             elif nums[mid] > target:
-                right = mid -1 
+                right = mid - 1
             elif nums[mid] == target:
-                right = mid -1
-                
+                right = mid - 1
+
         if left >= len(nums) or nums[left] != target:
             return -1
-        return left 
-        
-    def find_right_bound(self,nums,target):
-        
-        left, right = 0, len(nums)-1
-        
-        while(left <= right):
-            mid = left + (right - left) //2 
-            
-            if nums[mid] < target:
-                left = mid +1 
-            elif nums[mid] > target:
-                right = mid -1
-            elif nums[mid] == target:
-                left = mid +1
-            
-        if right< 0 or nums[right]!= target:
-            return -1
-        return right 
-        
-        
-# @lc code=end
+        return left
 
+    def find_right_bound(self, nums, target):
+
+        left, right = 0, len(nums)-1
+
+        while (left <= right):
+            mid = left + (right - left) // 2
+
+            if nums[mid] < target:
+                left = mid + 1
+            elif nums[mid] > target:
+                right = mid - 1
+            elif nums[mid] == target:
+                left = mid + 1
+
+        if right < 0 or nums[right] != target:
+            return -1
+        return right
+
+
+# @lc code=end

@@ -23,7 +23,7 @@ class Solution:
             return [[i for i in range(1,n+1)]]
         else :
             self.res = []
-            nums =[i for i in range(1,n+1)]
+            nums = [i for i in range(1,n+1)]
             self.combineHelper(nums,k,[])
             
             return self.res 

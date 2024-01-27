@@ -1,8 +1,8 @@
 '''
 Author: wangding wangding19@mails.ucas.ac.cn
 Date: 2023-02-12 22:07:04
-LastEditors: wangding wangding19@mails.ucas.ac.cn
-LastEditTime: 2023-03-09 09:56:36
+LastEditors: DingWang wangding19@mails.ucas.ac.cn
+LastEditTime: 2024-01-23 22:50:20
 FilePath: \Leetcode_Solver\46.全排列.py
 Description: 
 
@@ -17,7 +17,6 @@ Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
 # @lc code=start
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-                
         if len(nums) == 0: return []
         elif len(nums) == 1: return [[nums[0]]]
         elif len(nums) == 2: return [nums,nums[::-1]]
@@ -32,9 +31,12 @@ class Solution:
         if len(nums) == 0:
             self.res.append(track)
         
-        # 设置如何遍历
+        # 设置后序遍历
         for i in range(len(nums)):
-            self.permuteSolver(nums[:i] + nums[i+1:], track + [nums[i]],)
+            # 剩下的叶子节点
+            rest_nodes = nums[:i] + nums[i+1:]
+            
+            self.permuteSolver(rest_nodes, track + [nums[i]])
 
     
     # def permute(self, nums: List[int]) -> List[List[int]]:
