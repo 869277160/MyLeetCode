@@ -16,8 +16,10 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
-        # wrong_1 = None
-        # wrong_2 = None
+        if root == None:
+            return root 
+        else:
+            
         
         # def helper(root):
         #     if root == None :
